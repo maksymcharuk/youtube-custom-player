@@ -1,0 +1,38 @@
+.player {
+  position: relative;
+  height: 360px;
+  width: 640px;
+
+  &__controls {
+    align-items: center;
+    box-sizing: border-box;
+    bottom: 0;
+    display: flex;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+
+    div {
+      flex: 0 0 auto;
+
+      + div {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__controls-play,
+  &__controls-time {
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 3px;
+  }
+
+  &__controls-range {
+    flex: 1 1 auto !important;
+
+    input {
+      width: 100%;
+    }
+  }
+}
